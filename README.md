@@ -1,6 +1,6 @@
 # GroupViT: Semantic Segmentation Emerges from Text Supervision
 
-This repository is the official implementation for GroupViT introduced in the paper:
+This repository is the official implementation for the GroupViT framework introduced in the paper:
 
 [**GroupViT: Semantic Segmentation Emerges from Text Supervision**](https://arxiv.org/abs/2202.11094)
 <br>
@@ -9,9 +9,12 @@ This repository is the official implementation for GroupViT introduced in the pa
 [*Wonmin Byeon*](https://wonmin-byeon.github.io/),
 [*Thomas Breuel*](http://www.tmbdev.net/),
 [*Jan Kautz*](https://research.nvidia.com/person/jan-kautz),
-[*Xiaolong Wang*](https://xiaolonw.github.io/)
+[*Xiaolong Wang*](https://xiaolonw.github.io/),
 <br>
-CVPR 2022
+CVPR 2022.
+
+GroupViT is a framework for learning to perform semantic segmentation guided purely by text annotations, 
+which performs bottom-up heirarchical spatial grouping of semantically-related visual regions.
 
 The project page with examples is at [https://jerryxu.net/GroupViT/](https://jerryxu.net/GroupViT/).
 
