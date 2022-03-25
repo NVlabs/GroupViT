@@ -1,0 +1,26 @@
+_base_: 'default.yml'
+data:
+  text_aug:
+    multi_label: 3
+
+model:
+  type: MultiLabelContrastive
+  img_encoder:
+    type: GroupViT
+    embed_dim: 384
+    num_heads: [6, 6, 6]
+    depths: [6, 3, 3]
+    num_group_tokens: [64, 8, 0]
+    num_output_groups: [64, 8]
+    drop_rate: 0.0
+    drop_path_rate: 0.1
+  text_encoder:
+    type: TextTransformer
+    context_length: 77
+    width: 256
+    layers: 12
+    vocab_size: 49408
+  contrast_temperature: 0.07
+  proj_num_layers: 2
+  output_dim: 256
+  multi_label: ${data.text_aug.multi_label}
