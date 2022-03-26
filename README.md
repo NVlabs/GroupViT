@@ -120,13 +120,6 @@ python demo/demo_seg.py --cfg configs/group_vit_gcc_yfcc_30e.yml --resume /path/
 
 Pre-trained weights `group_vit_gcc_yfcc_30e-879422e0.pth` and `group_vit_gcc_redcap_30e-3dd09a76.pth` for these models are provided by Jiarui Xu [here](https://github.com/xvjiarui/GroupViT#benchmark). 
 
-To reproduce the benchmark results with these pre-trained models:
-
-<details><summary>Zero-shot Transfer to Classification on ImageNet</summary><pre><code>./tools/dist_launch.sh main_group_vit.py /path/to/config 8 --resume /path/to/checkpoint --eval</code></pre> </details>
-<details><summary>Zero-shot Transfer to Semantic Segmentation on Pascal VOC</summary><pre><code>./tools/dist_launch.sh main_seg.py /path/to/config 8 --resume /path/to/checkpoint</code></pre></details>
-<details><summary>Zero-shot Transfer to Semantic Segmentation on Pascal Context</summary><pre><code>./tools/dist_launch.sh main_seg.py /path/to/config 8 --resume /path/to/checkpoint --opts evaluate.seg.cfg=segmentation/configs/_base_/datasets/pascal_context.py</code></pre></details>
-<details><summary>Zero-shot Transfer to Semantic Segmentation on COCO</summary><pre><code>./tools/dist_launch.sh main_seg.py /path/to/config 8 --resume /path/to/checkpoint --opts evaluate.seg.cfg=segmentation/configs/_base_/datasets/coco.py</code></pre></details>
-
 ## Data Preparation
 
 During training, we use [webdataset](https://webdataset.github.io/webdataset/) for scalable data loading.
@@ -320,6 +313,14 @@ For example, to train on two nodes with 8 GPUs each, run:
 ```
 
 We used 16 NVIDIA V100 GPUs for pre-training (in 2 days) in our paper.
+
+### Zero-shot Transfer to Image Classification
+
+#### ImageNet
+
+```shell
+./tools/dist_launch.sh main_group_vit.py /path/to/config 8 --resume /path/to/checkpoint --eval
+```
 
 ### Zero-shot Transfer to Semantic Segmentation
 
