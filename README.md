@@ -118,7 +118,7 @@ python demo/demo_seg.py --cfg configs/group_vit_gcc_yfcc_30e.yml --resume /path/
 </tbody>
 </table>
 
-Pre-trained weights `group_vit_gcc_yfcc_30e-879422e0.pth` and `group_vit_gcc_redcap_30e-3dd09a76.pth` for these models are provided by Jiarui Xu [here](https://github.com/xvjiarui/GroupViT#benchmark). 
+Pre-trained weights `group_vit_gcc_yfcc_30e-879422e0.pth` and `group_vit_gcc_redcap_30e-3dd09a76.pth` for these models are provided by Jiarui Xu [here](https://github.com/xvjiarui/GroupViT#benchmark-results). 
 
 ## Data Preparation
 
