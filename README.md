@@ -267,11 +267,11 @@ Please follow the [webdataset ImageNet Example](https://github.com/tmbdev-archiv
 
 ### Pascal VOC
 
-Please follow the[MMSegmentation Pascal VOC Preparation](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/dataset_prepare.md#pascal-voc) instructions to download and setup the Pascal VOC dataset.
+Please follow the [MMSegmentation Pascal VOC Preparation](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/dataset_prepare.md#pascal-voc) instructions to download and setup the Pascal VOC dataset.
 
 ### Pascal Context
 
-Please refer to the[MMSegmentation Pascal Context Preparation](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/dataset_prepare.md#pascal-context) instructions to download and setup the Pascal Context dataset.
+Please refer to the [MMSegmentation Pascal Context Preparation](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/en/dataset_prepare.md#pascal-context) instructions to download and setup the Pascal Context dataset.
 
 ### COCO
 
