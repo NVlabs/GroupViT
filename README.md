@@ -319,7 +319,7 @@ We used 16 NVIDIA V100 GPUs for pre-training (in 2 days) in our paper.
 #### ImageNet
 
 ```shell
-./tools/dist_launch.sh main_group_vit.py /path/to/config 8 --resume /path/to/checkpoint --eval
+./tools/dist_launch.sh main_group_vit.py /path/to/config $NUM_GPUS --resume /path/to/checkpoint --eval
 ```
 
 ### Zero-shot Transfer to Semantic Segmentation
