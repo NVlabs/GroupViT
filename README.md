@@ -290,26 +290,26 @@ python convert_dataset/convert_coco.py local_data/data/coco/ -o local_data/data/
 Train on a single node:
 
 ```shell
-(node0)$ ./tools/dist_train.sh /path/to/config $GPUS_PER_NODE
+(node0)$ ./tools/dist_launch.sh main_group_vit.py /path/to/config $GPUS_PER_NODE
 ```
 
 For example, to train on a node with 8 GPUs, run:
 ```shell
-(node0)$ ./tools/dist_train.sh configs/group_vit_gcc_yfcc_30e.yml 8
+(node0)$ ./tools/dist_launch.sh main_group_vit configs/group_vit_gcc_yfcc_30e.yml 8
 ```
 
 Train on multiple nodes:
 
 ```shell
-(node0)$ ./tools/dist_mn_train.sh /path/to/config $NUM_NODES $NODE_RANK $GPUS_PER_NODE $MASTER_ADDR
-(node1)$ ./tools/dist_mn_train.sh /path/to/config $NUM_NODES $NODE_RANK $GPUS_PER_NODE $MASTER_ADDR
+(node0)$ ./tools/dist_mn_launch.sh main_group_vit.py /path/to/config $NODE_RANK $NUM_NODES $GPUS_PER_NODE $MASTER_ADDR
+(node1)$ ./tools/dist_mn_launch.sh main_group_vit.py /path/to/config $NODE_RANK $NUM_NODES $GPUS_PER_NODE $MASTER_ADDR
 ```
 
 For example, to train on two nodes with 8 GPUs each, run:
 
 ```shell
-(node0)$ ./tools/dist_mn_train.sh configs/group_vit_gcc_yfcc_30e.yml 0 2 8 tcp://node0
-(node1)$ ./tools/dist_mn_train.sh configs/group_vit_gcc_yfcc_30e.yml 1 2 8 tcp://node0
+(node0)$ ./tools/dist_mn_launch.sh main_group_vit.py configs/group_vit_gcc_yfcc_30e.yml 0 2 8 tcp://node0
+(node1)$ ./tools/dist_mn_launch.sh main_group_vit.py configs/group_vit_gcc_yfcc_30e.yml 1 2 8 tcp://node0
 ```
 
 We used 16 NVIDIA V100 GPUs for pre-training (in 2 days) in our paper.
