@@ -74,7 +74,7 @@ pip install nltk ftfy regex tqdm
 
 * Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). Try out the web demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/xvjiarui/GroupViT)
 
-* Run the demo on Google Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pdJVfAZUchMiHCraA_qBwAs4xnt1ekIU)
+* Run the demo on Google Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Mwtz6ojiThWWdRrpAZTLlLs6w3T9Fr6x)
 
 * To run the demo from the command line:
 
