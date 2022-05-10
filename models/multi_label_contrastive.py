@@ -1,12 +1,9 @@
 # -------------------------------------------------------------------------
-# Copyright (c) 2021-2022, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# Copyright (c) 2021-2022, NVIDIA Corporation & Affiliates. All rights reserved.
 #
-# NVIDIA CORPORATION & AFFILIATES and its licensors retain all intellectual
-# property and proprietary rights in and to this software, related
-# documentation and any modifications thereto.  Any use, reproduction,
-# disclosure or distribution of this software and related documentation
-# without an express license agreement from NVIDIA CORPORATION is strictly
-# prohibited.
+# This work is made available under the Nvidia Source Code License.
+# To view a copy of this license, visit
+# https://github.com/NVlabs/GroupViT/blob/main/LICENSE
 #
 # Written by Jiarui Xu
 # -------------------------------------------------------------------------
