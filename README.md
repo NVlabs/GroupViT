@@ -8,7 +8,7 @@ introduced in the paper:
 [**GroupViT: Semantic Segmentation Emerges from Text Supervision**](https://arxiv.org/abs/2202.11094),
 [*Jiarui Xu*](https://jerryxu.net),
 [*Shalini De Mello*](https://research.nvidia.com/person/shalini-gupta),
-[*Sifei Liu*](https://research.nvidia.com/person/sifei-liu)
+[*Sifei Liu*](https://research.nvidia.com/person/sifei-liu),
 [*Wonmin Byeon*](https://wonmin-byeon.github.io/),
 [*Thomas Breuel*](http://www.tmbdev.net/),
 [*Jan Kautz*](https://research.nvidia.com/person/jan-kautz),
